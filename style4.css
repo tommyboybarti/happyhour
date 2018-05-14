@@ -9,30 +9,36 @@ body {
             background-color: #fff;
             color: #444;
         }
-
         .box {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             padding: 20px;
             font-size: 150%;
         }
-        .a {
+        .a, .b, .c, .c0, .c1, .d, .d0, .d3 {
             grid-column: auto / span 6;
+        }
+        .f, .h, .k {
+            grid-column: auto / span 5;
+        }
+        .g, .i, .l {
+            grid-column: auto / span 7;
+        }
+        .filler {
+            grid-column: auto / span 4;
+        }
+        .a {
             padding-right: 10%;
         }
-        .b {
-            grid-column: auto / span 6;
-        }
-        .c {
-            grid-column: auto / span 6;
-        }
         .d {
-            grid-column: auto / span 6;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            line-height: 0.5vw;
         }
-        .d0 {
-            grid-column: auto / span 6;
-            text-align: center
+        .c0, .d0, .d3 {
+            text-align: center;
+        }
+        .c, .title_small {
+            line-height: 0vw;
         }
         .d1 {
             grid-column: 1;
@@ -42,35 +48,10 @@ body {
             grid-column: 2;
             text-align: right;
         }
-        .d3 {
-            grid-column: auto / span 6;
-            text-align: center
-        }
         .title_small {
             grid-column: auto / span 8;
             text-align: left;
             padding-left: 10%;
-        }
-        .f {
-            grid-column: auto / span 5;
-        }
-        .g {
-            grid-column: auto / span 7;
-        }
-        .h {
-            grid-column: auto / span 5;
-        }
-        .i {
-            grid-column: auto / span 7;
-        }
-        .k {
-            grid-column: auto / span 5;
-        }
-        .l {
-            grid-column: auto / span 7;
-        }
-        .filler {
-            grid-column: auto / span 4;
         }
         img {
             display: flex;
@@ -78,9 +59,11 @@ body {
         }
         h1 {
             font-size: 4.5vw;
+            margin: 0.25vw;
         }
         h2 {
             font-size: 2.5vw;
+            margin: 0.1vw;
         }
         h3 {
             font-size: 2vw;
