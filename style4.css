@@ -17,6 +17,7 @@ body {
         }
         .a {
             grid-column: auto / span 6;
+            padding-right: 10%;
         }
         .b {
             grid-column: auto / span 6;
@@ -45,8 +46,10 @@ body {
             grid-column: auto / span 6;
             text-align: center
         }
-        .e {
-            grid-column: auto / span 12;
+        .title_small {
+            grid-column: auto / span 8;
+            text-align: left;
+            padding-left: 10%;
         }
         .f {
             grid-column: auto / span 5;
@@ -60,14 +63,14 @@ body {
         .i {
             grid-column: auto / span 7;
         }
-        .j {
-            grid-column: auto / span 12;
-        }
         .k {
             grid-column: auto / span 5;
         }
         .l {
             grid-column: auto / span 7;
+        }
+        .filler {
+            grid-column: auto / span 4;
         }
         img {
             display: flex;
@@ -78,7 +81,6 @@ body {
         }
         h2 {
             font-size: 2.5vw;
-            text-align: center;
         }
         h3 {
             font-size: 2vw;
