@@ -3,69 +3,69 @@ body {
     width: 95%;
     margin: auto;
 }
-  .container {
-    padding: 1rem 3rem 1rem 3rem;
-    font-family: 'Architects Daughter', cursive;
-    /* border: 2px solid black; */
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-    grid-gap: 0.5rem;
-  }
-  .title {
-    grid-column: col-start / -1;
-    text-align: center;
-  }
-  .small-left {
-    grid-column: col-start / span 5;
-  }
-  .large-right {
-    grid-column: col-start 6 / -1;
-    padding-left: 10px;
-  }
-  .med-left {
-    grid-column: col-start / 7;
-  }
-  .med-right {
-    grid-column: col-start 7 / -1;
-  }
-  .right {
-      float: right;
-  }
-  .left {
-      float: left;
-  }
-  .center {
-      text-align: center;
-  }
-  img {
-    display: flex;
-    width: 100%;
-  }
-  h1 {
-      font-size: 4.5vw;
-      margin: 0rem;
-  }
-  h2 {
-      font-size: 2.5vw;
-      text-align: center;
-      margin: 0.5rem;
-  }
-  h3 {
-      font-size: 2vw;
-  }
-  h4 {
-      font-size: 2vw;
-      margin: 0rem;
-      padding: 0rem;
-  }
-  p {
-      font-size: 1.8vw;
-      margin: 0rem;
-  }
-  span {
-      font-size: 1.5vw;
-      float: right;
-  }
+    .container {
+        padding: 1rem 3rem 1rem 3rem;
+        font-family: 'Architects Daughter', cursive;
+        /* border: 2px solid black; */
+        display: grid;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        grid-gap: 0.5rem;
+    }
+    .title {
+        grid-column: col-start / -1;
+        text-align: center;
+    }
+    .small-left {
+        grid-column: col-start / span 5;
+    }
+    .large-right {
+        grid-column: col-start 6 / -1;
+        padding-left: 10px;
+    }
+    .med-left {
+        grid-column: col-start / 7;
+    }
+    .med-right {
+        grid-column: col-start 7 / -1;
+    }
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
+    .center {
+        text-align: center;
+    }
+    img {
+        display: flex;
+        width: 100%;
+    }
+    h1 {
+        font-size: 4vw;
+        margin: 0rem 0rem 0.5rem 0rem;
+    }
+    h2 {
+        font-size: 2.5vw;
+        text-align: center;
+        margin: 0.5rem;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+    h4 {
+        font-size: 2vw;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    p {
+        font-size: 1.5vw;
+        margin: 0rem;
+    }
+    span {
+        font-size: 1.4vw;
+        float: right;
+    }
 
 
-  
+    
