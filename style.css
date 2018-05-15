@@ -5,7 +5,7 @@ body {
 }
   .container {
     padding: 1rem 3rem 1rem 3rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Architects Daughter', cursive;
     /* border: 2px solid black; */
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
@@ -63,7 +63,7 @@ body {
       margin: 0rem;
   }
   span {
-      font-size: 1.6vw;
+      font-size: 1.5vw;
       float: right;
   }
 
