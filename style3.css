@@ -39,6 +39,7 @@
         }
         .d0, .d3 {
             grid-column: 1 / span 2;
+            text-align: center;
         }
         .d1 {
             grid-column: 1;
@@ -72,9 +73,10 @@
         }
 
 
-        /* 
+        
         @media screen and (max-width: 700px) {
             .box {   
                 flex-direction: column;
+                flex: 1 1 100%;
             }
-        } */
+        }
