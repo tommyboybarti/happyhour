@@ -21,34 +21,23 @@ body {
 
         /* BOXES */
         .a {
-            grid-column: auto / span 6;
             padding-right: 10%;
-            grid-row: 1;
         }
-        .b {
-            grid-column: auto / span 6;
-            grid-row: 1;
-        } 
         .c {
-            grid-column: auto / span 6;
             line-height: 0vw;
         }
         .c0 {
-            grid-column: auto / span 6;
             text-align: center;
         }
         .c1 {
-            grid-column: auto / span 6;
             line-height: 0vw;
         }
         .d {
-            grid-column: auto / span 6;
             display: grid;
             grid-template-columns: 1fr 1fr;
             line-height: 0.5vw;
         }
         .d0 {
-            grid-column: auto / span 6;
             text-align: center
         }
         .d1 {
@@ -60,7 +49,6 @@ body {
             text-align: right;
         }
         .d3 {
-            grid-column: auto / span 6;
             text-align: center
         }
 
