@@ -6,50 +6,38 @@
     width: 95%;
     margin: auto;
     font-family: 'Architects Daughter', cursive;
-
     }
     .wrapper {
             display: flex;
-            flex-wrap: wrap;
-            padding: 1rem 2rem 1rem 2rem;
-            background-color: #fff;
-            color: #444;
-            /* flex: 1 1 auto; */
-        }
-        .wrapper>* {
-            flex: 1 1 auto;
-        }
-        @media screen and (max-width: 700px) {
-            .box {   
-                flex-direction: column;
-            }
+            flex-flow: row wrap;
+            padding: 4vw;
         }
         .box {
             border: 1px solid black;
-            padding: 20px;
-            font-size: 150%;
+            padding: 1vw;
+            flex: 50 1 50%;
+        }
+        .sml {
+            flex: 40 1 40%;
+        }
+        .lgm {
+            flex: 100 1 100%;
+        }
+        img {
+            width: auto;
         }
 
-        /* BOXES */
-        .a {
-            padding-right: 10%;
-        } 
-        .c {
-            line-height: 0vw;
+        .b {
+            padding-left: 4vw;
         }
-        .c0 {
-            text-align: center;
-        }
-        .c1 {
+        .c1, .d1, .d2 {
             line-height: 0vw;
         }
         .d {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            line-height: 0.5vw;
         }
-        .d0 {
-            text-align: center;
+        .d0, .d3 {
             grid-column: 1 / span 2;
         }
         .d1 {
@@ -60,11 +48,6 @@
             grid-column: 2;
             text-align: right;
         }
-        .d3 {
-            grid-column: auto / span 6;
-            text-align: center
-        }
-
 
         img {
             width: 100%;
@@ -76,6 +59,7 @@
         h2 {
             font-size: 2.5vw;
             margin: 0.1vw;
+            text-align: center;
         }
         h3 {
             font-size: 2vw;
@@ -86,3 +70,11 @@
         p {
             font-size: 1.6vw;
         }
+
+
+        /* 
+        @media screen and (max-width: 700px) {
+            .box {   
+                flex-direction: column;
+            }
+        } */

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     border: 1px solid black;
     width: 95%;
@@ -8,7 +11,7 @@ body {
             display: grid;
             grid-gap: 1.5vw;
             grid-template-columns: repeat(12, minmax(auto, 1fr) ) ;
-            padding: 2vw;
+            padding: 5vw;
             background-color: #ffffff;
             color: #444;
         }
