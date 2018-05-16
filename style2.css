@@ -6,39 +6,31 @@ body {
   }
     .wrapper {
             display: grid;
-            grid-gap: 10px;
+            grid-gap: 1.5vw;
             grid-template-columns: repeat(12, minmax(auto, 1fr) ) ;
-            padding: 1rem 2rem 1rem 2rem;
+            padding: 2vw;
             background-color: #ffffff;
             color: #444;
         }
+
+/* ------------- BOXES ------------- */
         .box {
-            border: 1px solid black;
-            padding: 20px;
-            font-size: 150%;
+            /*  
+            HELPERLINES
+            border: 1px solid black; 
+            */  
+            padding: 1vw 1vw 0.5vw 1vw;
             grid-column: auto / span 6;
         }
-
-        /* BOXES */
-        .a {
-            padding-right: 10%;
+        .b {
+            padding-left: 15%;
         }
-        .c {
-            line-height: 0vw;
-        }
-        .c0 {
-            text-align: center;
-        }
-        .c1 {
+        .c1, .d1, .d2 {
             line-height: 0vw;
         }
         .d {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            line-height: 0.5vw;
-        }
-        .d0 {
-            text-align: center
         }
         .d1 {
             grid-column: 1;
@@ -49,79 +41,36 @@ body {
             text-align: right;
         }
         .d3 {
-            text-align: center
+            text-align: center;
+            line-height: 1vw;
         }
-        .title_small, .z {
-            grid-column: auto / span 12;   
-            border: 1px solid black; 
-            text-align: center;                    
+        .lgm {
+            grid-column: auto / span 12;                     
+        }
+        .sml {
+            grid-column: auto / span 5;
+        }
+        .smr {
+            grid-column: auto / span 7;
         }
 
-
-        @media ( max-width: 500px ) {
-            .wrapper {
-                grid-template-columns: repeat(6, minmax(auto, 1fr)) ;
-            }
-                .a {
-                    grid-row: 1;
-                }
-                .b {
-                    grid-row: 2;
-                }
-                .c {
-                    grid-row: 3;
-                }
-                .d {
-                    grid-row: 4;
-                }
-                .title_small {
-                    grid-row: 5;
-                    grid-column: auto / span 6;
-                }
-                .e {
-                    grid-row: 6;
-                }
-                .f {
-                    grid-row: 7;
-                }
-                .g {
-                    grid-row: 8;
-                }
-                .h {
-                    grid-row: 9;
-                }
-                .i {
-                    grid-row: 10;
-                }
-                .z {
-                    grid-row: 11;
-                    grid-column: auto / span 6;
-                }
-                .k {
-                    grid-row: 12;
-                }
-                .l {
-                    grid-row: 13;
-                }
-            }
-
-
-
-
+/* ------------- IMG & TEXT ------------- */
         img {
             display: flex;
             width: 100%;
         }
         h1 {
             font-size: 4.5vw;
-            margin: 0.25vw;
+            margin: 0.2vw;
         }
         h2 {
-            font-size: 2.5vw;
-            margin: 0.1vw;
+            font-size: 3vw;
+            margin: 0vw;
+            padding-bottom: 0vw;
+            text-align: center;
         }
         h3 {
-            font-size: 2vw;
+            font-size: 2.2vw;
         }
         h4 {
             font-size: 2vw;
@@ -129,3 +78,30 @@ body {
         p {
             font-size: 1.6vw;
         }
+        span {
+            font-size: 1.5vw;
+            float: right;
+        }
+
+/* ------------- MEDIA QUERY ------------- */
+
+        @media ( max-width: 500px ) {
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(6, minmax(auto, 1fr)) ;
+                padding: 2vw;
+            }
+                .box {
+                    grid-column: auto / span 6;
+                    padding: 1vw;
+                }
+                .lgm {
+                    padding-bottom: 0;
+                }
+                .c1, .d1, .d2, .d3, .k {
+                    text-align: center;
+                }
+                .d1, .d2 {
+                    grid-column: auto / span 1;
+                }
+            }
