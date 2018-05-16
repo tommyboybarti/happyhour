@@ -9,7 +9,7 @@ body {
             grid-gap: 10px;
             grid-template-columns: repeat(12, minmax(auto, 1fr) ) ;
             padding: 1rem 2rem 1rem 2rem;
-            background-color: #fff;
+            background-color: #ffffff;
             color: #444;
         }
         .box {
@@ -51,6 +51,11 @@ body {
         .d3 {
             text-align: center
         }
+        .title_small, .z {
+            grid-column: auto / span 12;   
+            border: 1px solid black; 
+            text-align: center;                    
+        }
 
 
         @media ( max-width: 500px ) {
@@ -68,6 +73,35 @@ body {
                 }
                 .d {
                     grid-row: 4;
+                }
+                .title_small {
+                    grid-row: 5;
+                    grid-column: auto / span 6;
+                }
+                .e {
+                    grid-row: 6;
+                }
+                .f {
+                    grid-row: 7;
+                }
+                .g {
+                    grid-row: 8;
+                }
+                .h {
+                    grid-row: 9;
+                }
+                .i {
+                    grid-row: 10;
+                }
+                .z {
+                    grid-row: 11;
+                    grid-column: auto / span 6;
+                }
+                .k {
+                    grid-row: 12;
+                }
+                .l {
+                    grid-row: 13;
                 }
             }
 
