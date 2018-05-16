@@ -5,13 +5,16 @@ body {
     font-family: 'Architects Daughter', cursive;
   }
     .wrapper {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: repeat(12, minmax(auto, 1fr) ) ;
+            display: flex;
+            flex-wrap: wrap;
             padding: 1rem 2rem 1rem 2rem;
             background-color: #fff;
             color: #444;
         }
+        .wrapper>* {
+            flex: 1 1 350px;
+          }
+      
         .box {
             border: 1px solid black;
             padding: 20px;
@@ -20,35 +23,25 @@ body {
 
         /* BOXES */
         .a {
-            grid-column: auto / span 6;
             padding-right: 10%;
-            grid-row: 1;
-        }
-        .b {
-            grid-column: auto / span 6;
-            grid-row: 1;
         } 
         .c {
-            grid-column: auto / span 6;
             line-height: 0vw;
         }
         .c0 {
-            grid-column: auto / span 6;
             text-align: center;
         }
         .c1 {
-            grid-column: auto / span 6;
             line-height: 0vw;
         }
         .d {
-            grid-column: auto / span 6;
             display: grid;
             grid-template-columns: 1fr 1fr;
             line-height: 0.5vw;
         }
         .d0 {
-            grid-column: auto / span 6;
-            text-align: center
+            text-align: center;
+            grid-column: 1 / span 2;
         }
         .d1 {
             grid-column: 1;
@@ -62,18 +55,6 @@ body {
             grid-column: auto / span 6;
             text-align: center
         }
-
-
-        @media ( max-width: 500px ) {
-            .a {
-                grid-row: 1;
-            }
-            .b {
-                grid-row: 2;
-            }
-        }
-
-
 
 
         img {
