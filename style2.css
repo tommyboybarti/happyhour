@@ -16,6 +16,7 @@ body {
             border: 1px solid black;
             padding: 20px;
             font-size: 150%;
+            grid-column: auto / span 6;
         }
 
         /* BOXES */
@@ -65,13 +66,22 @@ body {
 
 
         @media ( max-width: 500px ) {
-            .a {
-                grid-row: 1;
+            .wrapper {
+                grid-template-columns: repeat(6, minmax(auto, 1fr)) ;
             }
-            .b {
-                grid-row: 2;
+                .a {
+                    grid-row: 1;
+                }
+                .b {
+                    grid-row: 2;
+                }
+                .c {
+                    grid-row: 3;
+                }
+                .d {
+                    grid-row: 4;
+                }
             }
-        }
 
 
 
